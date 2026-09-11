@@ -1,0 +1,584 @@
+{
+  "users": [
+    {
+      "id": "usr_owner_001",
+      "name": "LumaCloud Owner",
+      "email": "support@lumacloud.xyz",
+      "avatar": "/logo.png",
+      "role": "OWNER",
+      "email_verified": true,
+      "status": "ACTIVE",
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z",
+      "password_hash": "7d7495a8db544d66e6d218eb32f472230df89273fe246f9f63cde7fc7a232feac9c63ad84b3899c9403f0dd5f175bbd6bf956e8868c03ff68ce170cfeb0757e9",
+      "salt": "7ea77f6f43aa00806958fbc46de72805",
+      "last_login": "2026-09-11T06:19:12.065Z"
+    },
+    {
+      "id": "usr_staff_001",
+      "name": "Alex Vance",
+      "email": "alex@lumacloud.xyz",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "role": "STAFF",
+      "email_verified": true,
+      "status": "ACTIVE",
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z",
+      "password_hash": "fa8953521a55080fa7f0c912d98adff407e8df8190fc2b49bb5025f98d7f819889a8bb46bb4e928311e61a57a604ac2dab10ce87a91970e4be0b1569e1c61e86",
+      "salt": "5a98a2d4554918aa2982239ab1ec268c"
+    },
+    {
+      "id": "usr_cust_001",
+      "name": "Jordan Miller",
+      "email": "jordan@example.com",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "role": "CUSTOMER",
+      "email_verified": true,
+      "status": "ACTIVE",
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z",
+      "password_hash": "01098b4558dc609709dc5e0e79575c2b7289abfa78026b737a6676627178ed2cace6fea347de3f922b35d02a525bbd6eab05009de1bc3e6f857134b0a45a828a",
+      "salt": "455b737d35ca8b8a55262637be4e8984"
+    },
+    {
+      "id": "usr_g_030d1bbc",
+      "google_id": "goog_1789083119292",
+      "name": "Google User",
+      "email": "client.google@lumacloud.xyz",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&auto=format&fit=crop&q=80",
+      "role": "CUSTOMER",
+      "email_verified": true,
+      "status": "ACTIVE",
+      "created_at": "2026-09-11T05:01:59.663Z",
+      "updated_at": "2026-09-11T05:01:59.663Z",
+      "password_hash": "5ef3a97ed9e4f62e865cd2d0b3f90d4c249a7e21d84bbca6bcbf566d254bad810e32665ed46d9162397f8e210defd6ba6b12ae896b68a66d78c8eb7a46c14ec0",
+      "salt": "1bd53aa04e74f78c364837bef0b5c255"
+    },
+    {
+      "id": "usr_a69b886d",
+      "name": "Alex Customer",
+      "email": "alex@testclient.com",
+      "avatar": "https://api.dicebear.com/7.x/identicon/svg?seed=alex%40testclient.com",
+      "role": "CUSTOMER",
+      "email_verified": true,
+      "status": "ACTIVE",
+      "created_at": "2026-09-11T06:19:18.042Z",
+      "updated_at": "2026-09-11T06:19:18.042Z",
+      "password_hash": "66ba341cde803bb76fe6a7e09e700551d5293cfe4ccecc783bef4f7b79811844a0a22d9f605ce2321401e1f47a6a5843a15a0c4fc327b41c081724e424211b92",
+      "salt": "4e6bb8d6973ac50643e208462280679b"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "b26c06f2c3a58720016c8b90a1e4a01c81fa6f25967d7b18423e041d9b516967",
+      "user_id": "usr_g_030d1bbc",
+      "expires_at": "2026-10-11T05:01:59.664Z"
+    },
+    {
+      "token": "e90edbc5c69993cad1f6bf23155f7115d39516e69b1412726fd514d59aeca483",
+      "user_id": "usr_owner_001",
+      "expires_at": "2026-10-11T06:15:01.482Z"
+    },
+    {
+      "token": "e41444402a3c8fc724f8f69efc409a4548a1975d543bf6544d26ccd8f3231587",
+      "user_id": "usr_owner_001",
+      "expires_at": "2026-10-11T06:19:12.065Z"
+    },
+    {
+      "token": "513af295b0f82ea1b9ac4b738ca0c28d5816d23e0a98aa009235398d43852e60",
+      "user_id": "usr_a69b886d",
+      "expires_at": "2026-10-11T06:19:18.043Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tkt_001024",
+      "ticket_number": "#LC-001024",
+      "user_id": "usr_cust_001",
+      "subject": "VPS suddenly offline",
+      "description": "Our production Node.js API server on VPS Node #4 (Debian 12) became unreachable approximately 20 minutes ago. SSH connection attempts time out on port 22. Ping to IP 194.26.112.44 returns Destination Host Unreachable. Please help urgently as production users are affected.",
+      "category_id": "cat_vps",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "assigned_to": "usr_staff_001",
+      "created_at": "2026-09-11T03:01:06.300Z",
+      "updated_at": "2026-09-11T04:31:06.300Z",
+      "sla_deadline": "2026-09-11T07:01:06.300Z",
+      "sla_breached": false
+    },
+    {
+      "id": "tkt_001025",
+      "ticket_number": "#LC-001025",
+      "user_id": "usr_cust_001",
+      "subject": "Minecraft server high tick lag on Purpur 1.21",
+      "description": "We are experiencing server tick drop from 20 TPS down to 11 TPS whenever more than 15 players join our survival SMP. Attached timings report and spark profile. Can you check if the CPU thread allocation can be pinned or optimized?",
+      "category_id": "cat_mc",
+      "priority": "MEDIUM",
+      "status": "OPEN",
+      "created_at": "2026-09-11T00:01:06.300Z",
+      "updated_at": "2026-09-11T00:01:06.300Z",
+      "sla_deadline": "2026-09-11T12:01:06.300Z",
+      "sla_breached": false
+    },
+    {
+      "id": "tkt_001026",
+      "ticket_number": "#LC-001026",
+      "user_id": "usr_cust_001",
+      "subject": "DDoS mitigation query for domain DNS",
+      "description": "We noticed periodic SYN-flood spikes targeting port 25565. Does LumaCloud Layer 7 filter activate automatically or do we need specific BGP scrubbing route rules configured?",
+      "category_id": "cat_ddos",
+      "priority": "URGENT",
+      "status": "RESOLVED",
+      "assigned_to": "usr_owner_001",
+      "created_at": "2026-09-10T05:01:06.300Z",
+      "updated_at": "2026-09-10T21:01:06.300Z",
+      "resolved_at": "2026-09-10T21:01:06.300Z",
+      "sla_deadline": "2026-09-10T06:01:06.300Z",
+      "sla_breached": false
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_001",
+      "ticket_id": "tkt_001024",
+      "sender_id": "usr_cust_001",
+      "message": "Our production Node.js API server on VPS Node #4 (Debian 12) became unreachable approximately 20 minutes ago. SSH connection attempts time out on port 22. Ping to IP 194.26.112.44 returns Destination Host Unreachable. Please help urgently as production users are affected.",
+      "is_internal": false,
+      "created_at": "2026-09-11T03:01:06.300Z"
+    },
+    {
+      "id": "msg_002",
+      "ticket_id": "tkt_001024",
+      "sender_id": "usr_staff_001",
+      "message": "Hello Jordan! Thank you for reaching out to LumaCloud Support. I am investigating KVM hypervisor Node #4 right now. I will check the internal bridge network and power state.",
+      "is_internal": false,
+      "created_at": "2026-09-11T03:31:06.300Z"
+    },
+    {
+      "id": "msg_003",
+      "ticket_id": "tkt_001024",
+      "sender_id": "usr_staff_001",
+      "message": "Checked VPS node logs. Node appears healthy, but vNIC virtio interface experienced a silent kernel lockup. Resetting the virtual adapter now.",
+      "is_internal": true,
+      "created_at": "2026-09-11T03:49:06.300Z"
+    },
+    {
+      "id": "msg_004",
+      "ticket_id": "tkt_001024",
+      "sender_id": "usr_staff_001",
+      "message": "We have reset the virtual network interface and verified ping response to 194.26.112.44 is normal now. Can you please confirm if your SSH and daemon services are responding?",
+      "is_internal": false,
+      "created_at": "2026-09-11T04:31:06.300Z"
+    }
+  ],
+  "attachments": [],
+  "timeline": [
+    {
+      "id": "tl_001",
+      "ticket_id": "tkt_001024",
+      "user_id": "usr_cust_001",
+      "user_name": "Jordan Miller",
+      "user_role": "CUSTOMER",
+      "action": "CREATED",
+      "details": "Ticket created with priority HIGH",
+      "created_at": "2026-09-11T03:01:06.300Z"
+    },
+    {
+      "id": "tl_002",
+      "ticket_id": "tkt_001024",
+      "user_id": "usr_staff_001",
+      "user_name": "Alex Vance",
+      "user_role": "STAFF",
+      "action": "ASSIGNED",
+      "details": "Ticket assigned to Alex Vance",
+      "created_at": "2026-09-11T03:13:06.300Z"
+    },
+    {
+      "id": "tl_003",
+      "ticket_id": "tkt_001024",
+      "user_id": "usr_staff_001",
+      "user_name": "Alex Vance",
+      "user_role": "STAFF",
+      "action": "STATUS_CHANGED",
+      "details": "Alex changed status from OPEN to IN PROGRESS",
+      "created_at": "2026-09-11T03:31:06.300Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_tech",
+      "name": "Technical Support",
+      "slug": "technical-support",
+      "description": "General server and system technical issues",
+      "is_active": true,
+      "icon": "Wrench"
+    },
+    {
+      "id": "cat_mc",
+      "name": "Minecraft Hosting",
+      "slug": "minecraft-hosting",
+      "description": "Game server setup, paper/purpur, mods, and plugins",
+      "is_active": true,
+      "icon": "Box"
+    },
+    {
+      "id": "cat_vps",
+      "name": "VPS Hosting",
+      "slug": "vps-hosting",
+      "description": "Virtual private servers, KVM nodes, Linux/Windows OS",
+      "is_active": true,
+      "icon": "Server"
+    },
+    {
+      "id": "cat_bill",
+      "name": "Billing & Invoices",
+      "slug": "billing",
+      "description": "Subscriptions, invoice questions, and payment methods",
+      "is_active": true,
+      "icon": "CreditCard"
+    },
+    {
+      "id": "cat_acc",
+      "name": "Account & Security",
+      "slug": "account",
+      "description": "Login assistance, 2FA, and password recovery",
+      "is_active": true,
+      "icon": "Shield"
+    },
+    {
+      "id": "cat_net",
+      "name": "Network & Connectivity",
+      "slug": "network",
+      "description": "Routing, latency, IP assignments, and ports",
+      "is_active": true,
+      "icon": "Globe"
+    },
+    {
+      "id": "cat_ddos",
+      "name": "DDoS / Security Attack",
+      "slug": "ddos-security",
+      "description": "Active mitigation, firewall rules, attack filtering",
+      "is_active": true,
+      "icon": "Flame"
+    },
+    {
+      "id": "cat_web",
+      "name": "Website & Domains",
+      "slug": "website",
+      "description": "DNS records, SSL certificates, and web hosting",
+      "is_active": true,
+      "icon": "Compass"
+    },
+    {
+      "id": "cat_srv",
+      "name": "Server Crash / Issue",
+      "slug": "server-issue",
+      "description": "Kernel panics, hardware restarts, daemon crashes",
+      "is_active": true,
+      "icon": "AlertTriangle"
+    },
+    {
+      "id": "cat_oth",
+      "name": "Other Inquiries",
+      "slug": "other",
+      "description": "Sales inquiries and general partnership questions",
+      "is_active": true,
+      "icon": "HelpCircle"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_001",
+      "user_id": "usr_cust_001",
+      "ticket_id": "tkt_001024",
+      "type": "STAFF_REPLY",
+      "title": "Staff Replied to Ticket #LC-001024",
+      "message": "Alex Vance replied: \"We have reset the virtual network interface...\"",
+      "read": false,
+      "created_at": "2026-09-11T04:31:06.300Z"
+    },
+    {
+      "id": "notif_002",
+      "user_id": "usr_owner_001",
+      "ticket_id": "tkt_001025",
+      "type": "TICKET_CREATED",
+      "title": "New Support Ticket #LC-001025",
+      "message": "Customer Jordan Miller opened a ticket in Minecraft Hosting",
+      "read": false,
+      "created_at": "2026-09-11T00:01:06.300Z"
+    }
+  ],
+  "staff_permissions": {
+    "usr_staff_001": {
+      "view_tickets": true,
+      "reply": true,
+      "assign_tickets": true,
+      "change_status": true,
+      "change_priority": true,
+      "view_customers": true,
+      "manage_categories": false,
+      "manage_webhooks": false,
+      "view_analytics": true
+    }
+  },
+  "webhooks": [],
+  "webhook_logs": [],
+  "email_settings": {
+    "id": "email_settings_001",
+    "smtp_host": "",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": "",
+    "smtp_password_set": false,
+    "smtp_encryption": "STARTTLS",
+    "from_name": "LumaCloud Support",
+    "from_email": "support@lumacloud.xyz",
+    "reply_to": "support@lumacloud.xyz",
+    "status": "NOT_CONFIGURED",
+    "updated_at": "2026-09-11T05:01:06.299Z"
+  },
+  "email_templates": [
+    {
+      "id": "tpl_welcome",
+      "slug": "welcome",
+      "name": "Welcome to LumaCloud",
+      "subject": "Welcome to LumaCloud Support, {{user_name}}!",
+      "body": "Hello {{user_name}},\n\nWelcome to LumaCloud Support Center! Your account has been registered successfully.\n\nYou can access your dashboard anytime at: {{app_url}}\n\nBest regards,\nThe LumaCloud Team",
+      "variables": [
+        "user_name",
+        "user_email",
+        "app_name",
+        "app_url"
+      ],
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "tpl_verify",
+      "slug": "email-verification",
+      "name": "Email Verification",
+      "subject": "LumaCloud — Verify Your Email Address",
+      "body": "Hello {{user_name}},\n\nPlease verify your email address by visiting the following link:\n\n{{verification_url}}\n\nThis verification link will expire in 24 hours.\n\nLumaCloud Support",
+      "variables": [
+        "user_name",
+        "verification_url",
+        "app_name"
+      ],
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "tpl_reset",
+      "slug": "password-reset",
+      "name": "Password Reset",
+      "subject": "Reset your LumaCloud password",
+      "body": "Hello {{user_name}},\n\nA password reset was requested for your account. Click the link below to set a new password:\n\n{{reset_url}}\n\nIf you did not make this request, please ignore this email.\n\nLumaCloud Security",
+      "variables": [
+        "user_name",
+        "reset_url",
+        "app_name"
+      ],
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "tpl_ticket_new",
+      "slug": "new-ticket",
+      "name": "Ticket Confirmation",
+      "subject": "Support Ticket Registered: [{{ticket_id}}] {{ticket_subject}}",
+      "body": "Hello {{user_name}},\n\nYour support ticket {{ticket_id}} has been received and assigned to our queue.\n\nSubject: {{ticket_subject}}\nPriority: {{ticket_priority}}\nStatus: {{ticket_status}}\n\nYou can track and reply to your ticket here:\n{{ticket_url}}\n\nLumaCloud Support",
+      "variables": [
+        "user_name",
+        "ticket_id",
+        "ticket_subject",
+        "ticket_priority",
+        "ticket_status",
+        "ticket_url"
+      ],
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "tpl_staff_reply",
+      "slug": "staff-reply",
+      "name": "Staff Reply Notification",
+      "subject": "New reply on ticket [{{ticket_id}}]: {{ticket_subject}}",
+      "body": "Hello {{user_name}},\n\nOur support engineer {{staff_name}} has replied to your ticket {{ticket_id}}.\n\nView response:\n{{ticket_url}}\n\nLumaCloud Support",
+      "variables": [
+        "user_name",
+        "ticket_id",
+        "ticket_subject",
+        "staff_name",
+        "ticket_url"
+      ],
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "tpl_ticket_resolved",
+      "slug": "ticket-resolved",
+      "name": "Ticket Resolved",
+      "subject": "Resolved: [{{ticket_id}}] {{ticket_subject}}",
+      "body": "Hello {{user_name}},\n\nYour support ticket {{ticket_id}} has been marked as RESOLVED.\n\nIf you still need assistance, simply reply to reopen the conversation.\n\n{{ticket_url}}\n\nLumaCloud Support",
+      "variables": [
+        "user_name",
+        "ticket_id",
+        "ticket_subject",
+        "ticket_url"
+      ],
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    }
+  ],
+  "email_logs": [
+    {
+      "id": "eml_sac8v7c",
+      "timestamp": "2026-09-11T06:19:18.044Z",
+      "recipient": "alex@testclient.com",
+      "subject": "Welcome to LumaCloud Support, Alex Customer!",
+      "type": "WELCOME",
+      "status": "SENT",
+      "provider_response": "Logged locally (SMTP not configured in settings)"
+    }
+  ],
+  "sla_settings": {
+    "low_hours": 24,
+    "medium_hours": 12,
+    "high_hours": 4,
+    "urgent_hours": 1,
+    "notify_discord_on_breach": true
+  },
+  "security_settings": {
+    "require_email_verification": false,
+    "max_upload_size_mb": 10,
+    "rate_limit_per_minute": 60
+  },
+  "kb_articles": [
+    {
+      "id": "kb_001",
+      "title": "Optimizing Minecraft Servers with Aikar Flags & Purpur",
+      "slug": "optimizing-minecraft-servers-aikar-flags",
+      "category_id": "cat_mc",
+      "category_name": "Minecraft Hosting",
+      "excerpt": "Step-by-step guide to garbage collection JVM tuning, view-distance optimization, and entity ticking config.",
+      "content": "### High-Performance Minecraft Configuration\n\nWhen running a Minecraft server on LumaCloud, default Java garbage collection can cause sporadic tick skips and stuttering.\n\n#### Recommended Java Startup Flags (Aikar Flags):\n```bash\njava -Xms4G -Xmx4G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -jar server.jar nogui\n```\n\n#### Recommended Server Config Adjustments:\n1. In `server.properties`, set `view-distance=6` or `simulation-distance=4`.\n2. In `purpur.yml`, disable aggressive entity brain ticking for inactive mobs.\n3. Install **Spark** profiler plugin to trace lag sources.",
+      "helpful_count": 42,
+      "not_helpful_count": 1,
+      "views": 312,
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "kb_002",
+      "title": "VPS Initial Setup: SSH Keys, Firewall & Fail2ban",
+      "slug": "vps-initial-setup-ssh-keys-firewall",
+      "category_id": "cat_vps",
+      "category_name": "VPS Hosting",
+      "excerpt": "Harden your Debian/Ubuntu cloud server against brute force attacks in under 5 minutes.",
+      "content": "### Securing Your LumaCloud VPS\n\nEvery new cloud server should be secured immediately upon deployment.\n\n#### 1. Generate SSH Key Pair (Local Computer)\n```bash\nssh-keygen -t ed25519 -C \"your_email@example.com\"\nssh-copy-id root@YOUR_SERVER_IP\n```\n\n#### 2. Disable Password Authentication\nEdit `/etc/ssh/sshd_config`:\n```ini\nPasswordAuthentication no\nPermitRootLogin prohibit-password\n```\nRestart SSH daemon:\n```bash\nsystemctl restart sshd\n```\n\n#### 3. Enable UFW Firewall\n```bash\nufw default deny incoming\nufw default allow outgoing\nufw allow 22/tcp\nufw allow 80/tcp\nufw allow 443/tcp\nufw enable\n```",
+      "helpful_count": 58,
+      "not_helpful_count": 2,
+      "views": 489,
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "kb_003",
+      "title": "Pterodactyl Panel Game Server File Management & SFTP",
+      "slug": "pterodactyl-panel-file-management-sftp",
+      "category_id": "cat_mc",
+      "category_name": "Minecraft Hosting",
+      "excerpt": "How to upload large modpacks, server worlds, and plugins using secure SFTP clients like Cyberduck or FileZilla.",
+      "content": "### Using SFTP with LumaCloud Game Panel\n\nWeb uploads in browser are limited to 100MB per file. For world folders and large modpacks, connect directly with SFTP.\n\n#### Connection Details:\n- **Host**: Look at the Settings tab in your server console (e.g. `node1.lumacloud.xyz:2022`).\n- **Username**: Your panel username followed by a period and server ID (e.g. `user.7c18a9`).\n- **Password**: Your main LumaCloud client area account password.",
+      "helpful_count": 36,
+      "not_helpful_count": 0,
+      "views": 240,
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    },
+    {
+      "id": "kb_004",
+      "title": "LumaCloud DDoS Mitigation Architecture & DNS Configuration",
+      "slug": "lumacloud-ddos-mitigation-architecture",
+      "category_id": "cat_ddos",
+      "category_name": "DDoS / Security Attack",
+      "excerpt": "Understand how our multi-terabit Anycast BGP filtering protects your game and web ports.",
+      "content": "### Automatic Layer 3/4 and Layer 7 Filtering\n\nAll LumaCloud IP ranges are protected by always-on Anycast scrubbing centers with over 3.2 Tbps aggregate mitigation capacity.\n\n#### Protection Characteristics:\n- Sub-second detection of UDP reflection floods (NTP, DNS, Memcached).\n- SYN-cookie proxies for TCP services (Minecraft, web).\n- No additional configuration needed on the client side.",
+      "helpful_count": 29,
+      "not_helpful_count": 1,
+      "views": 198,
+      "created_at": "2026-09-11T05:01:06.299Z",
+      "updated_at": "2026-09-11T05:01:06.299Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "aud_sp23sgu",
+      "user_id": "usr_a69b886d",
+      "user_name": "Alex Customer",
+      "user_role": "CUSTOMER",
+      "action": "REGISTER",
+      "target_type": "USER",
+      "target_id": "usr_a69b886d",
+      "metadata": "Registered via local form",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-11T06:19:18.043Z"
+    },
+    {
+      "id": "aud_myldqgn",
+      "user_id": "usr_owner_001",
+      "user_name": "LumaCloud Owner",
+      "user_role": "OWNER",
+      "action": "FAILED_LOGIN",
+      "target_type": "USER",
+      "target_id": "usr_owner_001",
+      "metadata": "Incorrect password attempt",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-11T06:19:14.754Z"
+    },
+    {
+      "id": "aud_uz8y3q4",
+      "user_id": "usr_owner_001",
+      "user_name": "LumaCloud Owner",
+      "user_role": "OWNER",
+      "action": "LOGIN",
+      "target_type": "USER",
+      "target_id": "usr_owner_001",
+      "metadata": "User logged in",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-11T06:19:12.067Z"
+    },
+    {
+      "id": "aud_0y46pnz",
+      "user_id": "usr_owner_001",
+      "user_name": "LumaCloud Owner",
+      "user_role": "OWNER",
+      "action": "LOGIN",
+      "target_type": "USER",
+      "target_id": "usr_owner_001",
+      "metadata": "User logged in",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-11T06:15:01.483Z"
+    },
+    {
+      "id": "aud_fdpea66",
+      "user_id": "usr_g_030d1bbc",
+      "user_name": "Google User",
+      "user_role": "CUSTOMER",
+      "action": "GOOGLE_LOGIN",
+      "target_type": "USER",
+      "target_id": "usr_g_030d1bbc",
+      "metadata": "Authenticated via Google",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-11T05:01:59.665Z"
+    },
+    {
+      "id": "aud_001",
+      "user_id": "usr_owner_001",
+      "user_name": "LumaCloud Owner",
+      "user_role": "OWNER",
+      "action": "SYSTEM_INITIALIZED",
+      "target_type": "SYSTEM",
+      "target_id": "sys_001",
+      "metadata": "LumaCloud Support Center initialized with default schema & owner account",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-11T05:01:06.299Z"
+    }
+  ],
+  "password_resets": [],
+  "email_verifications": []
+}

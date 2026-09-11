@@ -1,0 +1,6 @@
+{
+  "name": "LumaCloud Support Center",
+  "description": "Official cloud hosting support portal and ticket management system for customers and staff, featuring automatic draft persistence and 24/7 technical incident tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
